@@ -3,3 +3,5 @@
 <% @user.posts.each do |post| %>
   <%= link_to post.title, post_path(post) %>
 <% end %>
+<br>
+<button type="submit" value="<%=@user%>" action="<%=new_post_path%>" method="GET">Create Post</button>
